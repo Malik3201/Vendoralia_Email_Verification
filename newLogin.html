@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    a {
+      color: #ff5959;
+    }
+    .main {
+      padding: 10px 48px;
+    }
+    footer{
+        padding: 32px;
+        margin: 48px;
+    }
+    @media (max-width: 375px) {
+      .title {
+        font-size: 20px;
+        color: red;
+      }
+      .main {
+        padding: 10px 30px;
+      }
+      footer{
+        padding: 24px;
+          margin: 30px;
+      }
+    }
+  </style>
+  <body>
+    <div>
+      <!-- <--------Header----->
+      <header
+        class="header"
+        style="
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          background-color: #fafafa;
+          padding: 20px 48px;
+        "
+      >
+        <img
+          style="width: 31px; height: 34px"
+          src="/logo.png"
+          alt="company logo"
+        />
+        <h1 style="color: #6a3cbc">VENDORALIA</h1>
+      </header>
+
+      <!-- main-Content -->
+      <main class="main">
+        <h1
+          class="title"
+          style="color: #000000; font-weight: 600; margin: 0 0 40px 0"
+        >
+          New Login to Vendoralia
+        </h1>
+        <p
+          style="
+            font-size: 16px;
+            font-weight: 400;
+            color: #000000;
+            margin: 0 0 38px 0;
+            line-height: 1.5;
+          "
+        >
+          Hey {{NAME}},
+        </p>
+
+        <p
+          style="
+            margin: 0 0 38px 0;
+            font-size: 16px;
+            font-weight: 400;
+            color: #000000;
+            line-height: 1.5;
+          "
+        >
+          We noticed a new sign-in to your account.
+        </p>
+
+        <!-- Login Details -->
+        <div style="margin-bottom: 30px">
+          <p
+            style="
+              margin: 0 0 8px 0;
+              font-size: 16px;
+              font-weight: 400;
+              color: #000000;
+              line-height: 1.5;
+            "
+          >
+            <span style="font-weight: 500">Location:</span> {{LOGIN_LOCATION}}
+          </p>
+          <p
+            style="
+              margin: 0 0 8px 0;
+              font-size: 16px;
+              font-weight: 400;
+              font-weight: 400;
+              color: #000000;
+              line-height: 1.5;
+            "
+          >
+            <span style="font-weight: 500">Device:</span> {{LOGIN_DEVICE}}
+          </p>
+          <p
+            style="
+              margin: 0 0 8px 0;
+              font-size: 16px;
+              font-weight: 400;
+              color: #000000;
+              line-height: 1.5;
+            "
+          >
+            <span style="font-weight: 500">Time:</span> {{LOGIN_TIME}}
+          </p>
+          <p
+            style="
+              margin: 0 0 38px 0;
+              font-size: 16px;
+              font-weight: 400;
+              color: #000000;
+              line-height: 1.5;
+            "
+          >
+            <span style="font-weight: 500">Date:</span> {{LOGIN_DATE}}
+          </p>
+        </div>
+
+        <p
+          style="
+            margin: 0 0 38px 0;
+            font-size: 16px;
+            font-weight: 400;
+            color: #000000;
+            line-height: 1.5;
+          "
+        >
+          If this was you, please can disregard this message.
+        </p>
+
+        <p style="margin: 0; font-size: 16px; color: #1a1a1a; line-height: 1.5">
+          If that wasn't you, we highly advise that you change your password as
+          soon as possible and also notify us by replying to this mail.
+        </p>
+      </main>
+
+      <!-- footer -->
+      <footer
+        style="
+          background-color: #fafafa;
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+        "
+      >
+        <p style="font-weight: 400; font-size: 14px; color: #494747">
+          Need help? <a href="#">Contact our support team</a> or no longer
+          interested in our newsletters? <a href="#">Unsubscribe here</a> . Want
+          to give us feedback? Let us know what you think on our
+          <a href="#">feedback site</a>.
+        </p>
+
+        <ul style="list-style: none; display: flex; gap: 24px; padding: 0px">
+          <li>
+            <a href="#"
+              ><img
+                style="width: 18px; height: 18px"
+                src="/facebook.png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                style="width: 18px; height: 18px"
+                src="/instagram.png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img style="width: 18px; height: 18px" src="/twitter.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                style="width: 18px; height: 18px"
+                src="/linkedIn.png"
+                alt=""
+            /></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
