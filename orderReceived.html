@@ -29,6 +29,11 @@
         margin: 30px;
       }
     }
+    @media (max-width: 425px) {
+      .orderDetails {
+        flex-direction: column;
+      }
+    }
   </style>
   <body>
     <div>
@@ -89,6 +94,7 @@
         </p>
 
         <div
+          class="orderDetails"
           style="
             margin: 0 0 38px 0;
             display: flex;
